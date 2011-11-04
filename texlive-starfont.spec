@@ -60,6 +60,7 @@ PostScript font files.
 %doc %{_texmfdistdir}/doc/fonts/starfont/starfont.pdf
 %doc %{_texmfdistdir}/doc/fonts/starfont/starfont.tex
 %doc %{_texmfdistdir}/doc/fonts/starfont/table.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -70,3 +71,5 @@ PostScript font files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
