@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-starfont
 Version:	1.2
-Release:	8
+Release:	9
 Summary:	The StarFont Sans astrological font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/starfont
