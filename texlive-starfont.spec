@@ -1,18 +1,12 @@
-# revision 19982
-# category Package
-# catalog-ctan /fonts/ps-type1/starfont
-# catalog-date 2010-09-30 00:35:45 +0200
-# catalog-license pd
-# catalog-version 1.2
 Name:		texlive-starfont
-Version:	1.2
-Release:	11
+Version:	19982
+Release:	1
 Summary:	The StarFont Sans astrological font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/starfont
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ fonts are supplied in the original TrueType Format and as
 PostScript font files.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,24 +48,10 @@ PostScript font files.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
-+ Revision: 756168
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 719578
-- texlive-starfont
-- texlive-starfont
-- texlive-starfont
-- texlive-starfont
-
