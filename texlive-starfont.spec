@@ -1,6 +1,6 @@
 Name:		texlive-starfont
 Version:	19982
-Release:	1
+Release:	2
 Summary:	The StarFont Sans astrological font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/starfont
