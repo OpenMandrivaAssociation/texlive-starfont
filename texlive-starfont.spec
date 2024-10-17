@@ -3,7 +3,7 @@ Version:	19982
 Release:	2
 Summary:	The StarFont Sans astrological font
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/starfont
+URL:		https://www.ctan.org/tex-archive/fonts/ps-type1/starfont
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/starfont.doc.r%{version}.tar.xz
